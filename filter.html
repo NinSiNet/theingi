@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Hello Filter</h2>
+<button onclick="mainMenu()">Try is</button>
+<p id="demo"></p>
+<script>
+	var ages=[10,45,20,6,34,10];
+
+	 function checkAdult(age){
+	 	return age<=18;
+	 }
+	 function mainMenu(){
+	 	document.getElementById('demo').innerHTML=ages.filter(checkAdult);
+	 }
+</script>
+</body>
+</html>
